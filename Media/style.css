@@ -1,0 +1,120 @@
+html{
+    font-family: sans-serif;
+}
+
+.card{
+    width: 300px;
+    box-shadow: 0px 10px 20px;
+    background: linear-gradient(rgb(171, 163, 163), #f9e0e0);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card-header{
+    display: flex;
+    align-items: center;
+    padding: 3px 5px 0px 5px;
+    justify-content: space-between;
+}
+
+.card-header-name-date{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card-avatar-name{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.card-name{
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: -8px;
+    margin-top: -5px;
+}
+
+.card-date{
+    font-size: 10px;
+    color: white;
+}
+
+.card-header-avatar{
+    background: rgb(255, 255, 255);
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+}
+
+.card-header-dot div{
+
+    background: rgb(0, 0, 0);
+    height: 4px;
+    width: 4px;
+    border-radius: 100%;
+}
+
+.card-header-dot{
+    display: flex;
+    gap: 3px;
+}
+
+.card-icon-description{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image-icon{
+    padding: 10px 0px 0px 15px;
+    margin-bottom: -10px;
+}
+
+.card-description{
+    font-size: small;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+.card-description span{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    display: flex;
+    gap: 50px;
+}
+
+.tablet{
+    display: flex;
+    gap: 50px;
+}
+
+@media (max-width: 768px) {
+    body{
+        display: block;
+    }
+
+    .card3{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 375px){
+    body{
+        display: block;
+    }
+
+    .tablet{
+        display: block;
+    }
+
+    .card2{
+        margin-top: 50px;
+    }
+}
+
