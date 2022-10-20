@@ -1,0 +1,230 @@
+@font-face {
+    font-family: sans-serif;
+    src: url(./font/Netflix\ Sans\ Light.otf);
+}
+
+html{
+    font-family: sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.section-netflix{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    justify-content: center;
+    gap: 50px;
+    padding: 0px 40px 0px 40px;
+    border-bottom: 8px solid #222;
+}
+
+.text-netflix{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 30%;
+    min-width: 25%;
+    padding:  0px 20px 0px 20px;
+}
+
+.titolo-netflix h1{
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+.subtitolo-netflix p{
+    font-size: 1.625rem;
+    font-weight: 400;
+}
+
+
+
+.immagine-netflix img{
+   position: relative;
+   z-index: 2;
+   max-width: 100%;
+   height: auto;
+}
+
+.immagine-netflix{
+    position: relative;
+    padding-bottom: 50px;
+    
+}
+
+.video-netflix{
+    position: absolute;
+    max-width: 73%;
+    left: 10.5%;
+    top: 18%;
+}
+
+.immagine-container2{
+    position: relative;
+}
+
+.immagine-netflix2{
+    position: relative;
+}
+
+.immagine-netflix2 img{
+    position: relative;
+}
+
+
+
+.animation-netflix{
+    width: 60%;
+    height: 17%;
+    min-width: 50%;
+    border: 2px solid hsla(0, 0%, 100%, .25);
+    border-radius: 0.75em;
+    position: absolute;
+    background-color: #000;
+    box-shadow: 0 0 2em 0 #000;
+    bottom: 8%;
+    left: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.avatar-download{
+    display: flex;
+    padding: 10px;
+
+}
+
+.card-download-text{
+    color: white;
+    margin-left: -80px;
+}
+
+.card-download-text h4{
+    margin-bottom: 2px;
+    font-size: 1em;
+}
+
+
+.card-download-text span{
+    color: #0071eb;
+    font-size: .9em;
+    
+}
+
+.animation-download{
+    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) 50% no-repeat;
+    background-size: 100%;
+    content: "";
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 3em;
+    outline: 2px solid #000;
+    outline-offset: -2px;
+    width: 3em;
+    margin-right: 10px;
+}
+    
+
+@media (max-width: 950px) {
+    .section-netflix{
+        flex-direction: column;
+        gap: 0px;
+        
+    }
+
+    .immagine-netflix img{
+        width: 100%;
+    }
+
+    .video-netflix video{
+        width: 100%;
+    }
+
+    .video-netflix{
+        left: 13%;
+    }
+
+    
+}
+
+@media (max-width: 685px){
+    .animation-download{
+        width: 2.5em;
+        height: 2.5em;
+    }
+
+    .animation-netflix{
+        height: 18%;
+        width: 62%;
+    }
+
+
+    .card-download-text span{
+        font-size: .7em;
+    }
+
+    .card-download-text h4{
+        font-size: .8em;
+    }
+
+    .card-avatar img{
+        width: 26%;
+    }
+
+}
+
+@media (max-width: 485px) {
+    .animation-netflix{
+        height: 22%;
+        width: 64%;
+    }
+
+
+    .card-download-text span{
+        font-size: .6em;
+    }
+
+    .card-download-text h4{
+        font-size: .7em;
+    }
+
+    .card-avatar img{
+        width: 24%;
+    }
+    .card-download-text{
+        margin-left: -100px;
+    }
+}
+
+@media (max-width: 420px) {
+    .animation-netflix{
+        height: 24%;
+        width: 65%;
+    }
+
+
+    .card-download-text span{
+        font-size: .5em;
+    }
+
+    .card-download-text h4{
+        font-size: .6em;
+    }
+
+    .card-avatar img{
+        width: 22%;
+    }
+
+    .card-download-text{
+        margin-left: -110px;
+    }
+
+}
+
