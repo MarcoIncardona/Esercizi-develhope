@@ -1,0 +1,47 @@
+
+
+@mixin article-card ($color, $border-color, $font-size: 1rem){
+    border: 1px solid $border-color;
+    padding: 10px;
+        p{
+         font-size: $font-size;
+         color: $color;
+        }
+    }
+
+
+div section:first-of-type article{
+    @include article-card($color: none, $border-color: green);
+}
+
+div section:first-of-type article:nth-child(odd){
+    @include article-card(blue, $border-color:none)
+}
+
+div section:first-of-type article:nth-child(even){
+    @include article-card(red, $border-color:none)
+}
+
+div section:last-child article{
+    @include article-card(green, blue, 24px)
+}
+
+
+
+div{
+    border: 1px solid red;
+    h1{
+    color: green;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    font-size:x-large;
+    text-align: center;
+    }
+    section{
+    display: flex;
+    padding: 0px 20px 20px 20px;
+    &:last-child{
+        justify-content: center;
+    }
+  }
+}
