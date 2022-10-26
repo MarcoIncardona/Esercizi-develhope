@@ -1,0 +1,50 @@
+@use "./variables.scss";
+@use "./function.scss";
+
+
+
+@mixin article-card ($color, $border-color, $font-size: 1rem){
+    border: function.toRem(1) solid $border-color;
+    padding: function.toRem(10);
+        p{
+         font-size: $font-size;
+         color: $color;
+        }
+    }
+
+
+div section:first-of-type article{
+    @include article-card($color: none, $border-color: green);
+}
+
+div section:first-of-type article:nth-child(odd){
+    @include article-card(blue, $border-color:none)
+}
+
+div section:first-of-type article:nth-child(even){
+    @include article-card(red, $border-color:none)
+}
+
+div section:last-child article{
+    @include article-card(green, blue, function.toRem(24))
+}
+
+
+
+div{
+    border: function.toRem(1) solid red;
+    h1{
+    color: green;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    font-size:x-large;
+    text-align: center;
+    }
+    section{
+    display: flex;
+    padding: function.toRem(0) function.toRem(20) function.toRem(20) function.toRem(20);
+    &:last-child{
+        justify-content: center;
+    }
+  }
+}

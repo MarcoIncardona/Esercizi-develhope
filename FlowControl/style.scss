@@ -1,0 +1,84 @@
+@function toRem($value) {
+    $remValue: ($value / 16 + rem); 
+    @return $remValue;
+}
+
+@mixin article-card ($color, $border-color, $font-size: 1rem){
+    border: toRem(1) solid $border-color;
+    padding: toRem(10);
+        p{
+         font-size: $font-size;
+         color: $color;
+        }
+    }
+
+
+div section:first-of-type article{
+    @include article-card($color: none, $border-color: green);
+}
+
+div section:first-of-type article:nth-child(odd){
+    @include article-card(blue, $border-color:none)
+}
+
+div section:first-of-type article:nth-child(even){
+    @include article-card(red, $border-color:none)
+}
+
+div section:last-child article{
+    @include article-card(green, blue, toRem(24));   
+}
+
+
+@for $index from 1 through 3{
+    .fs-#{$index}rem{
+        font-size: $index + rem;
+        background: darken(white, $index * 5);
+    }
+}
+
+@for $index from 4 through 20{
+    .fs-#{$index}rem{
+        background: darken(white, $index * 5);
+        color: lighten(black, $index * 5);
+        @if $index == 10{
+            background-color: blue;
+            color: red;
+        }
+    }
+}
+
+.numeri{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.numeri div{
+    width: toRem(45);
+    height: toRem(45);
+}
+
+div{
+    border: toRem(1) solid red;
+    h1{
+    color: green;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-align: center;
+    }
+    h2{
+        @extend h1;
+        border: toRem(1) solid red;
+        padding: 1rem;
+        text-decoration: none;
+        margin: toRem(0) toRem(50) toRem(0) toRem(50);
+    }
+    section{
+    display: flex;
+    padding: toRem(0) toRem(20) toRem(20) toRem(20);
+    &:last-child{
+        justify-content: center;
+    }
+  }
+}

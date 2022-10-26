@@ -1,0 +1,175 @@
+div section:first-of-type article {
+  border: 0.0625rem solid green;
+  padding: 0.625rem;
+}
+div section:first-of-type article p {
+  font-size: 1rem;
+  color: none;
+}
+
+div section:first-of-type article:nth-child(odd) {
+  border: 0.0625rem solid none;
+  padding: 0.625rem;
+}
+div section:first-of-type article:nth-child(odd) p {
+  font-size: 1rem;
+  color: blue;
+}
+
+div section:first-of-type article:nth-child(even) {
+  border: 0.0625rem solid none;
+  padding: 0.625rem;
+}
+div section:first-of-type article:nth-child(even) p {
+  font-size: 1rem;
+  color: red;
+}
+
+div section:last-child article {
+  border: 0.0625rem solid blue;
+  padding: 0.625rem;
+}
+div section:last-child article p {
+  font-size: 1.5rem;
+  color: green;
+}
+
+.fs-1rem {
+  font-size: 1rem;
+  background: #f2f2f2;
+}
+
+.fs-2rem {
+  font-size: 2rem;
+  background: #e6e6e6;
+}
+
+.fs-3rem {
+  font-size: 3rem;
+  background: #d9d9d9;
+}
+
+.fs-4rem {
+  background: #cccccc;
+  color: #333333;
+}
+
+.fs-5rem {
+  background: #bfbfbf;
+  color: #404040;
+}
+
+.fs-6rem {
+  background: #b3b3b3;
+  color: #4d4d4d;
+}
+
+.fs-7rem {
+  background: #a6a6a6;
+  color: #595959;
+}
+
+.fs-8rem {
+  background: #999999;
+  color: #666666;
+}
+
+.fs-9rem {
+  background: #8c8c8c;
+  color: #737373;
+}
+
+.fs-10rem {
+  background: gray;
+  color: gray;
+  background-color: blue;
+  color: red;
+}
+
+.fs-11rem {
+  background: #737373;
+  color: #8c8c8c;
+}
+
+.fs-12rem {
+  background: #666666;
+  color: #999999;
+}
+
+.fs-13rem {
+  background: #595959;
+  color: #a6a6a6;
+}
+
+.fs-14rem {
+  background: #4d4d4d;
+  color: #b3b3b3;
+}
+
+.fs-15rem {
+  background: #404040;
+  color: #bfbfbf;
+}
+
+.fs-16rem {
+  background: #333333;
+  color: #cccccc;
+}
+
+.fs-17rem {
+  background: #262626;
+  color: #d9d9d9;
+}
+
+.fs-18rem {
+  background: #1a1a1a;
+  color: #e6e6e6;
+}
+
+.fs-19rem {
+  background: #0d0d0d;
+  color: #f2f2f2;
+}
+
+.fs-20rem {
+  background: black;
+  color: white;
+}
+
+.numeri {
+  display: flex;
+  justify-content: space-around;
+}
+
+.numeri div {
+  width: 2.8125rem;
+  height: 2.8125rem;
+}
+
+div {
+  border: 0.0625rem solid red;
+  display: flex;
+  flex-direction: column;
+}
+div h1, div h2 {
+  color: green;
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-align: center;
+}
+div h2 {
+  border: 0.0625rem solid red;
+  padding: 1rem;
+  text-decoration: none;
+  
+  
+}
+div section {
+  display: flex;
+  padding: 0rem 1.25rem 1.25rem 1.25rem;
+}
+div section:last-child {
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */
