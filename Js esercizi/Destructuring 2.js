@@ -5,13 +5,15 @@ const person = {
   age: 25
 };
 
+/*
 const id = person.id;
 const firstName = person.firstName;
 const lastName = person.lastName;
 const age = person.age;
 
 console.log(id, firstName, lastName, age);
+*/
 
-const [id2, firstName2, lastName2, age2] = [person.id, person.firstName, person.lastName, person.age] 
+const {id, firstName, lastName, age} = person 
 
-console.log(id2, firstName2, lastName2, age2)
+console.log(id, firstName, lastName, age)
