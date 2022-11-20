@@ -12,6 +12,5 @@ const id = person.id;
   age: person.age
 }; */
 
-const personInfo = {...person}
-
+const {id: _, ...personInfo } = {...person};
 console.log(id, personInfo);
