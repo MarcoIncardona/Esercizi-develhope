@@ -4,9 +4,8 @@ const person = {
   age: 25
 }
 let keys = Object.keys(person);
-let values = Object.values(person);
 
-console.log(keys, values)
+keys.forEach((el) => console.log(`${el}: ${person[el]}`));
 
 
 // Print values of person using Object.keys
